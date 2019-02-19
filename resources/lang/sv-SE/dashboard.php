@@ -11,54 +11,54 @@
 
 return [
 
-    'dashboard'          => 'Dashboard',
-    'writeable_settings' => 'The Cachet settings directory is not writeable. Please make sure that <code>./bootstrap/cachet</code> is writeable by the web server.',
+    'dashboard'          => 'Instrumentpanel',
+    'writeable_settings' => 'Cachets inställningsmapp är inte skrivbar. Kontrollera så att <code>./bootstrap/cachet</code> är skrivbar i webbservern.',
 
     // Incidents
     'incidents' => [
-        'title'                    => 'Incidents & Maintenance',
-        'incidents'                => 'Incidents',
-        'logged'                   => '{0}There are no incidents, good work.|[1]You have logged one incident.|[2,*]You have reported <strong>:count</strong> incidents.',
-        'incident-create-template' => 'Create Template',
-        'incident-templates'       => 'Incident Templates',
+        'title'                    => 'Incidenter & Underhåll',
+        'incidents'                => 'Incidenter',
+        'logged'                   => '{0}Det finns inga incidenter, bra jobbat.|[1]Du har en loggad incident.|[2,*]Du har loggat <strong>:count</strong> incidenter.',
+        'incident-create-template' => 'Skapa mall',
+        'incident-templates'       => 'Incidentmall',
         'updates'                  => [
-            'title'   => 'Incident updates for :incident',
-            'count'   => '{0}Zero Updates|[1]One Update|[2]Two Updates|[3,*]Several Updates',
+            'title'   => 'Incident uppdateringar för :incident',
+            'count'   => '{0}Inga uppdateringar|[1]En uppdatering|[2]Två uppdateringar|[3,*]Flera uppdateringar',
             'add'     => [
-                'title'   => 'Create new incident update',
-                'success' => 'Your new incident update has been created.',
-                'failure' => 'Something went wrong with the incident update.',
+                'title'   => 'Skapa ny incidentuppdatering',
+                'success' => 'Din nya incidentuppdatering har skapats.',
+                'failure' => 'Något gick fel med incidentuppdateringen.',
             ],
             'edit' => [
-                'title'   => 'Edit incident update',
-                'success' => 'The incident update has been updated.',
-                'failure' => 'Something went wrong updating the incident update',
+                'title'   => 'Redigera incidentuppdatering',
+                'success' => 'Incidentuppdateringen har uppdaterats.',
+                'failure' => 'Något gick fel vid ändringen av incidentuppdateringen.',
             ],
         ],
-        'reported_by'              => 'Reported by :user',
+        'reported_by'              => 'Rapporterad av :user',
         'add'                      => [
-            'title'   => 'Report an incident',
-            'success' => 'Incident added.',
-            'failure' => 'There was an error adding the incident, please try again.',
+            'title'   => 'Rapportera en incident',
+            'success' => 'Incident tillagd.',
+            'failure' => 'Ett fel uppstod när incidenten skulle läggas till, försök igen senare.',
         ],
         'edit' => [
-            'title'   => 'Edit an incident',
-            'success' => 'Incident updated.',
-            'failure' => 'There was an error editing the incident, please try again.',
+            'title'   => 'Redigera incident',
+            'success' => 'Incident uppdaterad.',
+            'failure' => 'Ett fel uppstid när incidenten skulle redigeras, försök igen senare.',
         ],
         'delete' => [
-            'success' => 'The incident has been deleted and will not show on your status page.',
-            'failure' => 'The incident could not be deleted, please try again.',
+            'success' => 'Incidenten är borttagen och kommer inte visas på statussidan.',
+            'failure' => 'Incidenten kunde inte tas bort, försök igen senare.',
         ],
 
         // Incident templates
         'templates' => [
-            'title' => 'Incident Templates',
+            'title' => 'Incidentmallar',
             'add'   => [
-                'title'   => 'Create an incident template',
-                'message' => 'Create your first incident template.',
-                'success' => 'Your new incident template has been created.',
-                'failure' => 'Something went wrong with the incident template.',
+                'title'   => 'Skapa en incidentmall',
+                'message' => 'Skapa din första incidentmall.',
+                'success' => 'Din nya incidentmall är nu skapad.',
+                'failure' => 'Något gick fel med incidentmallen.',
             ],
             'edit' => [
                 'title'   => 'Edit Template',
