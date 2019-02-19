@@ -11,62 +11,62 @@
 
 return [
 
-    'dashboard'          => 'Översiktspanel',
-    'writeable_settings' => 'Cachets inställningskatalog är inte skrivbar. Kontrollera att <code>./bootstrap/cachet</code> är skrivbar av webbservern.',
+    'dashboard'          => 'Dashboard',
+    'writeable_settings' => 'The Cachet settings directory is not writeable. Please make sure that <code>./bootstrap/cachet</code> is writeable by the web server.',
 
     // Incidents
     'incidents' => [
         'title'                    => 'Incidents & Maintenance',
-        'incidents'                => 'Händelser',
+        'incidents'                => 'Incidents',
         'logged'                   => '{0}There are no incidents, good work.|[1]You have logged one incident.|[2,*]You have reported <strong>:count</strong> incidents.',
-        'incident-create-template' => 'Skapa mall',
-        'incident-templates'       => 'Händelsemallar',
+        'incident-create-template' => 'Create Template',
+        'incident-templates'       => 'Incident Templates',
         'updates'                  => [
-            'title'   => 'Uppdateringar för :incident',
-            'count'   => '{0}Inga uppdateringar|[1]En uppdatering|[2]Två uppdateringar|[3,*]Flera uppdateringar',
+            'title'   => 'Incident updates for :incident',
+            'count'   => '{0}Zero Updates|[1]One Update|[2]Two Updates|[3,*]Several Updates',
             'add'     => [
-                'title'   => 'Skapa en ny incidentuppdatering',
-                'success' => 'Din nya incidentuppdatering har skapats.',
-                'failure' => 'Något gick fel under uppdatering av incidenten.',
+                'title'   => 'Create new incident update',
+                'success' => 'Your new incident update has been created.',
+                'failure' => 'Something went wrong with the incident update.',
             ],
             'edit' => [
-                'title'   => 'Redigera incidentuppdatering',
-                'success' => 'Incidentuppdateringen har uppdaterats.',
+                'title'   => 'Edit incident update',
+                'success' => 'The incident update has been updated.',
                 'failure' => 'Something went wrong updating the incident update',
             ],
         ],
-        'reported_by'              => 'Rapporterad av :user',
+        'reported_by'              => 'Reported by :user',
         'add'                      => [
-            'title'   => 'Lägg till händelse',
+            'title'   => 'Report an incident',
             'success' => 'Incident added.',
             'failure' => 'There was an error adding the incident, please try again.',
         ],
         'edit' => [
-            'title'   => 'Redigera en händelse',
-            'success' => 'Händelse uppdaterad.',
+            'title'   => 'Edit an incident',
+            'success' => 'Incident updated.',
             'failure' => 'There was an error editing the incident, please try again.',
         ],
         'delete' => [
-            'success' => 'Händelsen har tagits bort och kommer inte visas på din statussida.',
+            'success' => 'The incident has been deleted and will not show on your status page.',
             'failure' => 'The incident could not be deleted, please try again.',
         ],
 
         // Incident templates
         'templates' => [
-            'title' => 'Händelsemallar',
+            'title' => 'Incident Templates',
             'add'   => [
-                'title'   => 'Skapa en händelsemall',
+                'title'   => 'Create an incident template',
                 'message' => 'Create your first incident template.',
                 'success' => 'Your new incident template has been created.',
                 'failure' => 'Something went wrong with the incident template.',
             ],
             'edit' => [
-                'title'   => 'Redigera mall',
+                'title'   => 'Edit Template',
                 'success' => 'The incident template has been updated.',
                 'failure' => 'Something went wrong updating the incident template',
             ],
             'delete' => [
-                'success' => 'Händelsen har tagits bort.',
+                'success' => 'The incident template has been deleted.',
                 'failure' => 'The incident template could not be deleted, please try again.',
             ],
         ],
@@ -74,11 +74,11 @@ return [
 
     // Incident Maintenance
     'schedule' => [
-        'schedule'     => 'Planerat underhåll',
+        'schedule'     => 'Maintenance',
         'logged'       => '{0}There has been no Maintenance, good work.|[1]You have logged one schedule.|[2,*]You have reported <strong>:count</strong> schedules.',
-        'scheduled_at' => 'Schemalagd till: tidsstämpel',
+        'scheduled_at' => 'Scheduled at :timestamp',
         'add'          => [
-            'title'   => 'Lägg till planerat underhåll',
+            'title'   => 'Add Maintenance',
             'success' => 'Maintenance added.',
             'failure' => 'Something went wrong adding the Maintenance, please try again.',
         ],
@@ -95,41 +95,41 @@ return [
 
     // Components
     'components' => [
-        'components'         => 'Komponenter',
-        'component_statuses' => 'Komponentstatus',
-        'listed_group'       => 'Grupperade under: namn',
+        'components'         => 'Components',
+        'component_statuses' => 'Component Statuses',
+        'listed_group'       => 'Grouped under :name',
         'add'                => [
-            'title'   => 'Lägg till en komponent',
-            'message' => 'Du borde lägga till en komponent.',
+            'title'   => 'Add a component',
+            'message' => 'You should add a component.',
             'success' => 'Component created.',
             'failure' => 'Something went wrong with the component group, please try again.',
         ],
         'edit' => [
-            'title'   => 'Redigera komponent',
+            'title'   => 'Edit a component',
             'success' => 'Component updated.',
             'failure' => 'Something went wrong with the component group, please try again.',
         ],
         'delete' => [
-            'success' => 'Komponenten har tagits bort!',
+            'success' => 'The component has been deleted!',
             'failure' => 'The component could not be deleted, please try again.',
         ],
 
         // Component groups
         'groups' => [
-            'groups'        => 'Komponentgrupp|Komponentgrupper',
-            'no_components' => 'Du borde lägga till en komponentgrupp.',
+            'groups'        => 'Component group|Component groups',
+            'no_components' => 'You should add a component group.',
             'add'           => [
-                'title'   => 'Lägg till en komponentgrupp',
+                'title'   => 'Add a component group',
                 'success' => 'Component group added.',
                 'failure' => 'Something went wrong with the component group, please try again.',
             ],
             'edit' => [
-                'title'   => 'Redigera komponentgrupp',
+                'title'   => 'Edit a component group',
                 'success' => 'Component group updated.',
                 'failure' => 'Something went wrong with the component group, please try again.',
             ],
             'delete' => [
-                'success' => 'Komponentgruppen har tagits bort!',
+                'success' => 'Component group has been deleted!',
                 'failure' => 'The component group could not be deleted, please try again.',
             ],
         ],
@@ -137,42 +137,42 @@ return [
 
     // Metrics
     'metrics' => [
-        'metrics' => 'Mätvärden',
+        'metrics' => 'Metrics',
         'add'     => [
-            'title'   => 'Skapa ett mätetal',
-            'message' => 'Du borde lägga till ett mätetal.',
+            'title'   => 'Create a metric',
+            'message' => 'You should add a metric.',
             'success' => 'Metric created.',
             'failure' => 'Something went wrong with the metric, please try again.',
         ],
         'edit' => [
-            'title'   => 'Redigera ett mätetal',
+            'title'   => 'Edit a metric',
             'success' => 'Metric updated.',
             'failure' => 'Something went wrong with the metric, please try again.',
         ],
         'delete' => [
-            'success' => 'Mätetalet har tagits bort och kommer inte längre visas på din statussida.',
+            'success' => 'The metric has been deleted and will no longer display on your status page.',
             'failure' => 'The metric could not be deleted, please try again.',
         ],
     ],
     // Subscribers
     'subscribers' => [
-        'subscribers'          => 'Prenumeranter',
+        'subscribers'          => 'Subscribers',
         'description'          => 'Subscribers will receive email updates when incidents are created or components are updated.',
         'description_disabled' => 'To use this feature, you need allow people to signup for notifications.',
-        'verified'             => 'Bekräftad',
-        'not_verified'         => 'Inte bekräftad',
+        'verified'             => 'Verified',
+        'not_verified'         => 'Not verified',
         'subscriber'           => ':email, subscribed :date',
         'no_subscriptions'     => 'Subscribed to all updates',
         'global'               => 'Globally subscribed',
         'add'                  => [
-            'title'   => 'Lägg till en prenumerant',
-            'success' => 'Prenumerant tillagd!',
+            'title'   => 'Add a new subscriber',
+            'success' => 'Subscriber has been added!',
             'failure' => 'Something went wrong adding the subscriber, please try again.',
             'help'    => 'Enter each subscriber on a new line.',
         ],
         'edit' => [
-            'title'   => 'Uppdatera prenumerant',
-            'success' => 'Prenumerant uppdaterad!',
+            'title'   => 'Update subscriber',
+            'success' => 'Subscriber has been updated!',
             'failure' => 'Something went wrong editing the subscriber, please try again.',
         ],
     ],
@@ -180,46 +180,46 @@ return [
     // Team
     'team' => [
         'team'        => 'Team',
-        'member'      => 'Medlem',
-        'profile'     => 'Profil',
-        'description' => 'Teammedlemmar kommer kunna lägga till, ändra &amp; redigera komponenter och händelser.',
+        'member'      => 'Member',
+        'profile'     => 'Profile',
+        'description' => 'Team Members will be able to add, modify &amp; edit components and incidents.',
         'add'         => [
-            'title'   => 'Lägg till en ny teammedlem',
+            'title'   => 'Add a new team member',
             'success' => 'Team member added.',
             'failure' => 'The team member could not be added, please try again.',
         ],
         'edit' => [
-            'title'   => 'Uppdatera profil',
+            'title'   => 'Update profile',
             'success' => 'Profile updated.',
             'failure' => 'Something went wrong updating the profile, please try again.',
         ],
         'delete' => [
-            'success' => 'Teammedlemen har tagits bort och kommer inte längre ha tillgång till översiktspanelen!',
+            'success' => 'Team member has been deleted and will no longer have access to the dashboard!',
             'failure' => 'The team member could not be added, please try again.',
         ],
         'invite' => [
-            'title'   => 'Bjud in en ny teammedlem',
-            'success' => 'Inbjudan har skickats',
+            'title'   => 'Invite a new team member',
+            'success' => 'An invite has been sent',
             'failure' => 'The invite could not be sent, please try again.',
         ],
     ],
 
     // Settings
     'settings' => [
-        'settings'  => 'Inställningar',
+        'settings'  => 'Settings',
         'app-setup' => [
-            'app-setup'   => 'Applikationsinstallation',
-            'images-only' => 'Endast bilder kan laddas upp.',
-            'too-big'     => 'Filen du försöker ladda upp är för stor. Ladda upp en bild som är mindre än :size',
+            'app-setup'   => 'Application Setup',
+            'images-only' => 'Only images may be uploaded.',
+            'too-big'     => 'The file you uploaded is too big. Upload an image smaller than :size',
         ],
         'analytics' => [
-            'analytics' => 'Analys',
+            'analytics' => 'Analytics',
         ],
         'log' => [
             'log' => 'Log',
         ],
         'localization' => [
-            'localization' => 'Platsanpassning',
+            'localization' => 'Localization',
         ],
         'customization' => [
             'customization' => 'Customization',
@@ -235,18 +235,18 @@ return [
             ],
         ],
         'security' => [
-            'security'   => 'Säkerhet',
-            'two-factor' => 'Användare utan tvåfaktorsautentisering',
+            'security'   => 'Security',
+            'two-factor' => 'Users without two-factor authentication',
         ],
         'stylesheet' => [
-            'stylesheet' => 'Stilmall',
+            'stylesheet' => 'Stylesheet',
         ],
         'theme' => [
-            'theme' => 'Tema',
+            'theme' => 'Theme',
         ],
         'edit' => [
-            'success' => 'Inställningar sparade.',
-            'failure' => 'Inställningarna kunde inte sparas.',
+            'success' => 'Settings saved.',
+            'failure' => 'Settings could not be saved.',
         ],
         'credits' => [
             'credits'       => 'Credits',
@@ -260,22 +260,22 @@ return [
 
     // Login
     'login' => [
-        'login'      => 'Logga in',
-        'logged_in'  => 'Du är inloggad.',
-        'welcome'    => 'Välkommen tillbaka!',
-        'two-factor' => 'Vänligen ange din kod.',
+        'login'      => 'Login',
+        'logged_in'  => 'You\'re logged in.',
+        'welcome'    => 'Welcome Back!',
+        'two-factor' => 'Please enter your token.',
     ],
 
     // Sidebar footer
-    'help'        => 'Hjälp',
-    'status_page' => 'Statussida',
-    'logout'      => 'Logga ut',
+    'help'        => 'Help',
+    'status_page' => 'Status Page',
+    'logout'      => 'Logout',
 
     // Notifications
     'notifications' => [
-        'notifications' => 'Notifieringar',
-        'awesome'       => 'Enastående.',
-        'whoops'        => 'Hoppsan.',
+        'notifications' => 'Notifications',
+        'awesome'       => 'Awesome.',
+        'whoops'        => 'Whoops.',
     ],
 
     // Widgets
@@ -288,16 +288,16 @@ return [
 
     // Welcome modal
     'welcome' => [
-        'welcome' => 'Välkommen till din statussida!',
-        'message' => 'Din statussida är nästan redo. Du kan vilja konfigerara de här extra inställningarna',
-        'close'   => 'I\'m good thanks!',
+        'welcome' => 'Welcome to your new Status page!',
+        'message' => 'Your status page is almost ready! You might want to configure these extra settings',
+        'close'   => 'Take me straight to my dashboard',
         'steps'   => [
-            'component'  => 'Skapa komponenter',
-            'incident'   => 'Skapa händelser',
-            'customize'  => 'Anpassa',
-            'team'       => 'Lägg till användare',
-            'api'        => 'Skapa API-nyckel',
-            'two-factor' => 'Tvåfaktorsautensiering',
+            'component'  => 'Create components',
+            'incident'   => 'Create incidents',
+            'customize'  => 'Customize',
+            'team'       => 'Add users',
+            'api'        => 'Generate API token',
+            'two-factor' => 'Two Factor Authentication',
         ],
     ],
 
